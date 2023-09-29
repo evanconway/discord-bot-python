@@ -21,4 +21,11 @@ async def on_ready():
     else:
         await channel.send('I am the bot and I am here.')
 
+@bot.command()
+async def add(ctx, x, y):
+    result = int(x) + int(y)
+    await ctx.send(f"{x} + {y} = {result}")
+
+
+
 bot.run(BOT_TOKEN)
