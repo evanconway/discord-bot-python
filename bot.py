@@ -22,9 +22,11 @@ async def on_ready():
         await channel.send('I am the bot and I am here.')
 
 @bot.command()
-async def add(ctx, x, y):
-    result = int(x) + int(y)
-    await ctx.send(f"{x} + {y} = {result}")
+async def add(ctx, *arr):
+    result = 0
+    for i in arr:
+        result += float(i)
+    await ctx.send(f"Result: {result}")
 
 
 
