@@ -7,5 +7,8 @@ installed pip with this command
 setup virtual environment 
 `python -m venv .venv`
 
-run virtual environment
+run virtual environment (may need to set execution policy to run)
 `.\.venv\Scripts\Activate.ps1`
+
+once in virtual environment run bot with
+`python ./bot.py`
